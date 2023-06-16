@@ -21,7 +21,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 
         public void Actualizar(Categoria categoria)
         {
-            var categoriaDB = _db.Bodegas.FirstOrDefault(b => b.Id == categoria.Id);
+            var categoriaDB = _db.Categorias.FirstOrDefault(b => b.Id == categoria.Id);
             if (categoriaDB != null)
             {
                 categoriaDB.Nombre= categoria.Nombre;
