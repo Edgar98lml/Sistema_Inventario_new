@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.Modelos.Especificaciones
 {
-    internal class Parametros
+    public class Parametros
     {
+        public int PageNumber { get; set; } = 1;
+
+        public int PageSize { get; set; } = 4;
+
     }
 }
