@@ -13,21 +13,21 @@ namespace SistemaInventario.AccesoDatos.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "Apellidos",
                 table: "AspNetUsers",
-                type: "int",
+                type: "nvarchar(80)",
                 maxLength: 80,
                 nullable: true);
 
             migrationBuilder.AddColumn<int>(
                 name: "Ciudad",
                 table: "AspNetUsers",
-                type: "int",
+                type: "nvarchar(60)",
                 maxLength: 60,
                 nullable: true);
 
             migrationBuilder.AddColumn<int>(
                 name: "Direccion",
                 table: "AspNetUsers",
-                type: "int",
+                type: "nvarchar(200)",
                 maxLength: 200,
                 nullable: true);
 
@@ -48,7 +48,7 @@ namespace SistemaInventario.AccesoDatos.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "Pais",
                 table: "AspNetUsers",
-                type: "int",
+                type: "nvarchar(60)",
                 maxLength: 60,
                 nullable: true);
         }
